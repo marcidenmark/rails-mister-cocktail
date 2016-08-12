@@ -1,2 +1,9 @@
-<h1>Coctails#new</h1>
+<h1>Cocktails#new</h1>
 <p>Find me in app/views/coctails/new.html.erb</p>
+<!-- app/views/products/_form.html.erb -->
+<%= simple_form_for(@cocktail) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :photo %>
+  <%= f.input :photo_cache, as: :hidden %>
+  <%= f.button :submit %>
+<% end %>
